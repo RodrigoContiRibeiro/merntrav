@@ -1,0 +1,29 @@
+.add-btn {
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+.addBox {
+  text-align: center;
+}
+
+.remove-btn {
+  margin-right: 2vh;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
