@@ -14,6 +14,13 @@ router.get("/", (req, res) => {
     .sort({ date: -1 }) //Sort by the most recent
     .then((items) => res.json(items));// Send the documents in JSON format
 });
+// GET -> /api/items
+// desc -> Get All Item's
+// access -> Everyone
+router.get("/:id", (req, res) => {
+  Item.findById(req.params.id) //Get the item by id on the url
+    .then((item) => res.json(item));// Send the documents in JSON format
+});
 
 // POST -> /api/items
 // desc -> Create an Item
